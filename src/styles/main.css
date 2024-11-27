@@ -86,7 +86,7 @@ body {
   height: 420px;
   background: #fff;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -166,7 +166,7 @@ body {
   background: #fff;
   padding: 30px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
   transition: 0.3s ease;
 }
 .about-container .about-content .about-section:hover {
@@ -215,7 +215,7 @@ body {
   background: #fff;
   padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 .contact-container .contact-content .contact-info h3 {
   color: #2e1760;
@@ -290,7 +290,7 @@ body {
   background: #fff;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
   max-width: 400px;
   margin: 0 auto;
 }
@@ -319,6 +319,82 @@ body {
 }
 .fun-container .counter-container .counter-button:active {
   transform: scale(0.95);
+}
+
+/*----- ColorPicker - Page -----*/
+.color-picker-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  min-height: calc(80vh - 20px);
+  border-radius: 15px;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+  /*----- Title styles -----*/
+  /*----- Main container -----*/
+}
+.color-picker-page h1 {
+  margin: 30px 0;
+  font-size: 40px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #2e1760;
+  padding: 10px 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+.color-picker-page .color-picker-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.2);
+  /*----- Input container -----*/
+}
+.color-picker-page .color-picker-container .color-inputs {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+  /*----- Input group  -----*/
+}
+.color-picker-page .color-picker-container .color-inputs .input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  /*----- Color picker input -----*/
+  /*----- Text input -----*/
+}
+.color-picker-page .color-picker-container .color-inputs .input-group label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2e1760;
+}
+.color-picker-page .color-picker-container .color-inputs .input-group input[type=color] {
+  width: 75px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  cursor: pointer;
+}
+.color-picker-page .color-picker-container .color-inputs .input-group input[type=color]:hover {
+  border-color: #2e1760;
+}
+.color-picker-page .color-picker-container .color-inputs .input-group input[type=text] {
+  width: 120px;
+  height: 50px;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.color-picker-page .color-picker-container .color-inputs .input-group input[type=text]:hover, .color-picker-page .color-picker-container .color-inputs .input-group input[type=text]:focus {
+  border-color: #2e1760;
+  outline: none;
 }
 
 /*----- Footer -----*/
