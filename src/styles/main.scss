@@ -167,7 +167,7 @@ body {
             margin-top: auto;
 
             &:hover {
-                background: lighten($primary-color, 10%);
+                background: color.scale($primary-color, $lightness: 90%);
             }
         }
     }
@@ -283,7 +283,7 @@ body {
                 input, textarea {
                     width: 100%;
                     padding: 12px;
-                    border: 2px solid rgba($primary-color, 0.1);
+                    border: 2px solid color.scale($primary-color, $lightness: 50%);
                     border-radius: 4px;
                     font-size: 16px;
                     transition: 0.3s ease;
@@ -312,7 +312,7 @@ body {
                 transition: 0.3s ease;
 
                 &:hover {
-                    background: lighten($primary-color, 10%);
+                    background: color.scale($primary-color, $lightness: 90%);
                     transform: translateY(-2px);
                 }
 
@@ -371,7 +371,7 @@ body {
             justify-content: center;
 
             &:hover {
-                background: rgba($primary-color, 0.8);
+                background: color.scale($primary-color, $lightness: 80%);
                 transform: scale(1.1);
             }
 
@@ -501,7 +501,7 @@ body {
         input {
             flex: 1;
             padding: 12px;
-            border: 1px solid lighten($primary-color, 50%);
+            border: 1px solid color.scale($primary-color, $lightness: 50%);
             border-radius: 4px;
             font-size: 16px;
             
@@ -523,7 +523,7 @@ body {
             font-size: 16px;
 
             &:hover {
-                background: #3f2180;
+                background: color.scale($primary-color, $lightness: 90%);
                 transform: translateY(-2px);
             }
         }
@@ -642,4 +642,3 @@ body {
         grid-template-columns: 1fr;
     }
 }
-
