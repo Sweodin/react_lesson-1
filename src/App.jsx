@@ -5,6 +5,7 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Fun from './pages/Fun'
 import Color from './pages/Color'
+import TodoList from './pages/TodoList'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/fun" element={<Fun />} />
             <Route path="/color" element={<Color />} />
+            <Route path="/todoList" element={<TodoList />} />
             </Routes>
         </main>
 

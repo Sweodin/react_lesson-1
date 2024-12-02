@@ -48,7 +48,16 @@ function Navbar() {
                         >
                             Color
                         </NavLink>
+                        </li>
+                        <li>
+                        <NavLink 
+                            to="/TodoList" 
+                            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+                        >
+                            To do List
+                        </NavLink>
                     </li>
+                    
                 </ul>
             </div>
         </nav>
